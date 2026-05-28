@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "MiMo Credits → 人民币",
+  "version": "2.0.0",
+  "description": "积分换金额 + 今日/月度消耗 Token 统计",
+  "content_scripts": [
+    {
+      "matches": ["https://platform.xiaomimimo.com/console/plan-manage*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "host_permissions": [
+    "https://platform.xiaomimimo.com/*"
+  ]
+}
